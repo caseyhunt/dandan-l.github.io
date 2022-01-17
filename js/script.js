@@ -1,3 +1,18 @@
+//hover to play videos
+let vid = document.getElementsByClassName('prototypevid');
+for(i=0; i<vid.length; i++){
+vid[i].addEventListener("mouseenter", playvid);
+vid[i].addEventListener("mouseleave", pausevid);
+}
+
+function playvid(e){
+  e.target.play();
+}
+
+function pausevid(e){
+  e.target.pause();
+}
+
 // code credit: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_gallery
 
 var slideIndex = 1;
